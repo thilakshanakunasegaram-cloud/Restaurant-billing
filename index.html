@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Restaurant</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login-box">
+
+            <h1>Welcome </h1>
+            <br>
+            <form action="menu.html">
+
+                Username<br> <input type="text">
+                <br>
+                Cashier ID <br> <input type="text" pattern="\d{4}" maxlength="4"
+                    title="Enter exactly a 4-digit Cashier ID" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                    required>
+
+                <button class="login-btn">Login</button>
+
+            </form>
+
+        </div>
+        <div class="image-box">
+            <img src="image/food.jpg" alt="Food Image">
+        </div>
+    </div>
+
+</body>
+
+</html>
